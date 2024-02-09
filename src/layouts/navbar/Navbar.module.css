@@ -1,0 +1,178 @@
+.navbar {
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 2.7rem;
+    height: 3rem;
+}
+
+.listControllers {
+    margin-right: 2.7rem;
+    width: 40%;
+    position: relative;
+    display: inherit;
+    justify-content: end;
+    align-items: inherit;
+    gap: 1rem;
+}
+
+.searchInput {
+    width: 50%;
+    height: 5vh;
+    border: 2px solid var(--login-form-clr);
+    border-radius: 1.5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.searchIcon, .addIcon {
+    color: var(--login-form-clr);
+    font-size: 2rem;
+}
+
+.addIcon {
+    cursor: pointer;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 0.6rem;
+    right: 7rem;
+}
+
+.userAvatar {
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.userLogout {
+    position: absolute;
+    height: 10vh;
+    width: 40%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    top: 3rem;
+    z-index: 1;
+}
+
+.userLogoutHidden {
+    display: none;
+}
+
+.userInfo {
+    border-radius: 100%;
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+.infoAndLogout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+    position: relative;
+}
+
+.userEmail {
+    color: var(--login-form-clr);
+}
+
+.logout {
+    font-weight: 370;
+    cursor: pointer;
+}
+
+.logoutIcon {
+    font-size: 1.2rem;
+    position: absolute;
+    margin-left: 0.5rem;
+}
+
+.listItemsContainer {
+    background-color: #fff;
+    width: 20%;
+    height: 18vh;
+    border-radius: 5px;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+    z-index: 2;
+}
+
+.listItemsContainerHidden {
+    display: none;
+}
+
+.listItemTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 100%;
+    height: auto;
+}
+
+.listItemInfo {
+    width: 50%;
+    height: auto;
+    display: inherit;
+    flex-direction: inherit;
+    gap: 0.6rem;
+}
+
+.listItemInfoGroup {
+    width: 100%;
+    display: inherit;
+    gap: 1rem;
+    align-items: center;
+}
+
+.listItemInfoGroupTitle {
+    font-size: 0.7rem;
+    font-weight: 200;
+    opacity: 0.5;
+    width: 40%;
+    text-transform: capitalize;
+}
+
+.commonInputs {
+    display: flex;
+    gap: 0.25rem;
+}
+
+input {
+    padding-left: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid var(--login-form-clr);
+}
+
+.listItemInfoGroupValueEdit {
+    width: 40%;
+}
+
+.saveButton {
+    padding: 0.2rem;
+    width: 20%;
+    position: absolute;
+    bottom: 0.5rem;;
+    right: 0.5rem;
+    background-color: var(--login-form-clr);
+    color: #fff;
+    cursor: pointer;
+}

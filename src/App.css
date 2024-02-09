@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Collonse';
+  src: local('Collonse'), url('/home/abed/Desktop/Assessment-OSD/Frontend/src/assets/FontsFree-Net-Collonse.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --login-form-clr: #5d4478;
+  --quote-clr: #564072;
+  --btn-clr: #b8bdb5;
+  --ido-bg-clr: #e7e4e8;
+  --ido-low: #51b4a0;
+  --ido-medium: #f17248;
+  --ido-high: #dc3545;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  font-family: "Outfit", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-family: 'Collonse', sans-serif;
 }
