@@ -163,10 +163,10 @@ input {
 }
 
 .listItemInfoGroupValueEdit {
-    width: 40%;
+    width: 50%;
 }
 
-.saveButton {
+.addButton {
     padding: 0.2rem;
     width: 20%;
     position: absolute;
@@ -175,4 +175,6 @@ input {
     background-color: var(--login-form-clr);
     color: #fff;
     cursor: pointer;
+    border: none;
+    border-radius: 10px;
 }

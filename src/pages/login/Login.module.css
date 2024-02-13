@@ -23,6 +23,7 @@
     position: relative;
     gap: 1rem;
     font-weight: 400;
+    height: 20vh;
 }
 
 .indexOne {
@@ -82,10 +83,15 @@
 
 .loginHeroSectionSlogan {
     width: 60%;
-    font-size: 2.7rem;
-    letter-spacing: 1.5rem;
+    font-size: 3rem;
+    letter-spacing: 1.3rem;
     font-weight: 500;
-    margin-left: 7.5rem;
+    margin-left: 8rem;
+    margin-top: 3rem;
+}
+
+.loginHeroSectionImage {
+    height: 40vh;
 }
 
 .inputGroups {
@@ -99,6 +105,17 @@
     display: inherit;
     flex-direction: inherit;
     gap: 0.3rem;
+    position: relative;
+}
+
+.visibilityIcon {
+    position: absolute;
+    right: 0;
+    margin-right: 0.5rem;
+    top: 2.1rem;
+    font-size: 1.4rem;
+    color: var(--login-form-clr);
+    cursor: pointer;
 }
 
 .label {
@@ -109,11 +126,12 @@
     padding: 0.7rem;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: text;
 }
 
 .submitButton {
     margin-bottom: 6rem;
+    margin-top: 1rem;
     width: 60%;
     padding: 0.4rem;
     border: none;
