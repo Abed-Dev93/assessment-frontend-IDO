@@ -34,8 +34,12 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-        const response = await axios.post(`${process.env.REACT_APP_PATH}/User/Login`, formData, { withCredentials: true })
-        response.data ? await fetchUser() && setTimeout(() => { navigate('/ido', { replace: true }) }) : console.error('False Credentials')
+        const response = await axios.post(`http://localhost:4000/User/Login`, formData, { withCredentials: true })
+        const token = response.data.token
+        localStorage.setItem('token', token)
+        await fetchUser()
+        setTimeout(() => { navigate('/ido', { replace: true }) }, 1000)
+        console.error('False Credentials')
         }
         catch (error) {
             console.error("Error Logging in", error.response.data.error)
