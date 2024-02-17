@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState,Suspense } from 'react'
 import style from './ListItem.module.css'
 import { useListContext } from '../../contexts/ListProvider'
 import { Helmet } from 'react-helmet'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import axios from 'axios'
+import LoadingFallback from '../loadingFallback/LoadingFallback'
 
 const ListItem = ({ title, category, date, estimate, unit, importance, id, list, onDragStart }) => {
 
@@ -69,6 +70,7 @@ const ListItem = ({ title, category, date, estimate, unit, importance, id, list,
         <meta name='description' content='choose how to manage your task on your own preferences' />
         <meta name='keywords' content='time, priority, category, tasks type' />
       </Helmet>
+    <Suspense fallback={<LoadingFallback />}>
       { isNotEditing ?
       <section className={style.listItemsContainer} draggable onDragStart={(e) => onDragStart(e)}>
         <h2 className={ !isNotFound && searchValue === title ? style.listItemTitleHighlighted : style.listItemTitle } onClick={handleInputClick}>{title}</h2>
@@ -135,6 +137,7 @@ const ListItem = ({ title, category, date, estimate, unit, importance, id, list,
         </div>
       </form>
     }
+    </Suspense>
     </>
   )
 }
